@@ -8,6 +8,13 @@ import { MatSliderModule } from '@angular/material/slider';
 import {MatListModule} from '@angular/material/list'; 
 import {MatButtonModule} from '@angular/material/button';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+
+import { Router, RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  { path: '', redirectTo: '', pathMatch: 'full'}
+];
 
 @NgModule({
   declarations: [
@@ -20,7 +27,12 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     BrowserAnimationsModule,
     MatSliderModule,
     MatListModule,
-    MatButtonModule
+    MatButtonModule,
+    RouterModule.forRoot(routes),
+    MatSidenavModule
+  ],
+  exports: [
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
