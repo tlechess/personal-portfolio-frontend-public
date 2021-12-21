@@ -12,14 +12,27 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 
 import { Router, RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [
-  { path: '', redirectTo: '', pathMatch: 'full'}
-];
+import {MatIconModule} from '@angular/material/icon';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ResumeComponent } from './components/resume/resume.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { HomeComponent } from './components/home/home.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent
+    NavBarComponent,
+    ResumeComponent,
+    AboutMeComponent,
+    PortfolioComponent,
+    ContactComponent,
+    HomeComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -28,8 +41,10 @@ const routes: Routes = [
     MatSliderModule,
     MatListModule,
     MatButtonModule,
-    RouterModule.forRoot(routes),
-    MatSidenavModule
+    RouterModule,
+    MatSidenavModule,
+    MatIconModule,
+    FontAwesomeModule
   ],
   exports: [
     RouterModule

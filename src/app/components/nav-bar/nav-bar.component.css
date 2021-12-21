@@ -1,0 +1,14 @@
+#nav-bar {
+  padding: 2rem 0;
+  height: 100px;
+}
+
+.list li a fa-icon {
+  font-size: 1.5rem;
+}
+
+.list li a:hover,
+.list li a fa-icon:hover,
+.list h2 a:hover {
+  color: var(--primary-color) !important;
+}
