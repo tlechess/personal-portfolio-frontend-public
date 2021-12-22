@@ -146,3 +146,12 @@ h6 {
 .fx-btw {
   justify-content: space-between;
 }
+
+/* center horizontal */
+.fx-ch {
+  align-items: center;
+}
+
+.fx-i-ch {
+  align-self: center;
+}
