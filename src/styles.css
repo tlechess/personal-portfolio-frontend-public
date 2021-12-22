@@ -105,6 +105,21 @@ h6 {
   color: #fff;
 }
 
+.text-light {
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
 .py-1 {
   padding: 1.5rem 0;
 }
@@ -139,6 +154,11 @@ h6 {
   display: flex;
 }
 
+.fx-col {
+  display: flex;
+  flex-direction: column;
+}
+
 .fx-sa {
   justify-content: space-around;
 }
@@ -154,4 +174,37 @@ h6 {
 
 .fx-i-ch {
   align-self: center;
+}
+
+.fx-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: var(--dark-color);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+}
+
+.btn-light {
+  background: var(--light-color);
+}
+.btn-primary {
+  background: var(--primary-color);
+}
+.btn-secondary {
+  background: var(--secondary-color);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 0.9;
 }
