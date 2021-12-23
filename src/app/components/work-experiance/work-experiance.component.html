@@ -1,0 +1,6 @@
+<h1 class="text-light">Technical Skills</h1>
+<div id="progress-group">
+    <div *ngFor="let skill of skills">
+        <app-progress-bar skillPercentage="{{skill.skillPercentage}}" skill="{{skill.skillName}}"></app-progress-bar>
+    </div>
+</div>
