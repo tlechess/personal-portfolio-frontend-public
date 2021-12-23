@@ -1,0 +1,81 @@
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+#education h1,
+#jobs h1 {
+  margin-top: 2rem;
+}
+#education ul,
+#jobs ul {
+  padding: 50px 0;
+}
+
+#education ul li,
+#jobs ul li {
+  position: relative;
+  width: 3px;
+  background: var(--primary-color);
+  margin: 0;
+}
+
+#education ul li:last-child,
+#jobs ul li:last-child {
+  background: none;
+}
+
+#education ul li .content,
+#jobs ul li .content {
+  position: relative;
+  bottom: 0;
+  width: 25rem;
+  padding: 0.7rem 2rem 1rem 3rem;
+  transition: all 0.5s ease-in-out;
+}
+
+ul {
+  width: 25rem;
+}
+#education ul li div p,
+#jobs ul li div p {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+#education ul li::before,
+#jobs ul li::before {
+  content: attr(data-before-content);
+  text-align: center;
+  line-height: 2.5rem;
+  color: var(--light-color);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--primary-color);
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+.heading {
+  display: flex;
+}
+
+.heading p {
+  line-height: 1.6rem;
+  padding-left: 1rem;
+}
+.heading p::before {
+  content: "-";
+  padding-right: 1rem;
+}
+
+.resume-heading {
+  border: 2px solid gray;
+  display: inline;
+  padding: 0.8rem;
+  border-radius: 5px;
+}
