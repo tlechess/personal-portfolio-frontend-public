@@ -14,13 +14,6 @@ export class CreateTimelineService {
       "Bethel Tech", 
       "April 2021 - December 2021", "Caleforna", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus id commodi labore qui rem quod recusandae, officiis omnis, fugiat ex animi magni minus facere nulla, rerum hic nam nesciunt. Temporibus."));
 
-    education.push(this.setTimeLine(
-      "Bethel Tech", 
-      "April 2021 - December 2021", "Caleforna", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus id commodi labore qui rem quod recusandae, officiis omnis, fugiat ex animi magni minus facere nulla, rerum hic nam nesciunt. Temporibus."));
-    education.push(this.setTimeLine(
-      "Bethel Tech", 
-      "April 2021 - December 2021", "Caleforna", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus id commodi labore qui rem quod recusandae, officiis omnis, fugiat ex animi magni minus facere nulla, rerum hic nam nesciunt. Temporibus."));
-
     return  education;
   }
 

@@ -1,19 +1,4 @@
 <div class="flex-container">
-    <section id="education">
-        <h1 class="text-light resume-heading">Education</h1>
-        <ul>
-            <li *ngFor="let education of educations;" [attr.data-before-content]="[setEducationIndex()]">
-                <div class="content">
-                    <p class="text-primary text-small">{{education.date}}</p>
-                    <div class="heading">
-                        <h3 class="text-light">{{education.heading}}</h3>
-                        <p class="text-primary">{{education.location}}</p>
-                    </div>
-                    <p class="text-light">{{education.perigraph}}</p>
-                </div>
-            </li>
-        </ul>
-    </section>
     <section id="jobs">
         <h1 class="text-light resume-heading">Work Experiences</h1>
         <ul>
@@ -25,6 +10,21 @@
                         <p class="text-primary">{{jobs.location}}</p>
                     </div>
                     <p class="text-light">{{jobs.perigraph}}</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section id="education">
+        <h1 class="text-light resume-heading">Education</h1>
+        <ul>
+            <li *ngFor="let education of educations;" [attr.data-before-content]="[setEducationIndex()]">
+                <div class="content">
+                    <p class="text-primary text-small">{{education.date}}</p>
+                    <div class="heading">
+                        <h3 class="text-light">{{education.heading}}</h3>
+                        <p class="text-primary">{{education.location}}</p>
+                    </div>
+                    <p class="text-light">{{education.perigraph}}</p>
                 </div>
             </li>
         </ul>

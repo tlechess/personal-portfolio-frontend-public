@@ -22,6 +22,7 @@ import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { TimeLineComponent } from './components/time-line/time-line.component';
 import { WorkExperianceComponent } from './components/work-experiance/work-experiance.component';
+import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 
 
 
@@ -36,7 +37,8 @@ import { WorkExperianceComponent } from './components/work-experiance/work-exper
     HomeComponent,
     PageNotFoundComponent,
     TimeLineComponent,
-    WorkExperianceComponent
+    WorkExperianceComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,

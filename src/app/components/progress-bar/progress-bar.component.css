@@ -1,0 +1,19 @@
+.progress {
+  overflow: hidden;
+  height: 20px;
+  background: gray;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  color: var(--light-color);
+}
+
+.progress div {
+  height: 100%;
+
+  color: var(--light-color);
+  text-align: center;
+  background: var(--primary-color);
+}
