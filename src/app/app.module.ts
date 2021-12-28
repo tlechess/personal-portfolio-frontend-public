@@ -23,6 +23,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { TimeLineComponent } from './components/time-line/time-line.component';
 import { WorkExperianceComponent } from './components/work-experiance/work-experiance.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
+import { TestComponent } from './components/test/test.component';
 
 
 
@@ -38,7 +39,8 @@ import { ProgressBarComponent } from './components/progress-bar/progress-bar.com
     PageNotFoundComponent,
     TimeLineComponent,
     WorkExperianceComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,

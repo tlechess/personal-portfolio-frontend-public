@@ -1,0 +1,38 @@
+.flex-container {
+  height: 800px;
+  width: 800px;
+  background: white;
+}
+
+.flex-itme {
+  height: 200px;
+  width: 200px;
+}
+
+#item-1 {
+  background: red;
+}
+
+#item-2 {
+  background: blue;
+}
+
+#item-3 {
+  background: green;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.fx-col {
+  flex-direction: column;
+}
+
+.fx-align-items {
+  align-items: center;
+}
+
+.fx-main-center {
+  justify-content: center;
+}

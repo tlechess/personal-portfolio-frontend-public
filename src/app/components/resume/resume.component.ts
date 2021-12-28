@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
-import { TimeLine } from 'src/app/models/time-line';
-import { CreateTimelineService } from 'src/app/services/create-timelin/create-timeline.service';
+import { WorkExperiences } from 'src/app/models/work-experiences';
+import { ResumeService } from 'src/app/services/create-timelin/resume.service';
 
 
 @Component({

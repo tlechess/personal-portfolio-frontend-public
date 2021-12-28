@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Skill } from 'src/app/models/skill';
 import { SkillServiceService } from 'src/app/services/skill/skill-service.service';
+import { faCogs } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-work-experiance',
@@ -9,6 +10,7 @@ import { SkillServiceService } from 'src/app/services/skill/skill-service.servic
 })
 export class WorkExperianceComponent implements OnInit {
   skills : Skill[] = []
+  faCogs = faCogs;
   constructor(private skillService: SkillServiceService) { }
 
   ngOnInit(): void {

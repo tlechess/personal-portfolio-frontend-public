@@ -1,51 +1,30 @@
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5rem;
-}
-
-#education h1,
-#jobs h1 {
-  margin-top: 2rem;
-}
-#education ul,
-#jobs ul {
-  padding: 50px 0;
-}
-
-#education ul li,
-#jobs ul li {
+.timeline {
   position: relative;
   width: 3px;
-  background: var(--primary-color);
+  background: var(--light-color);
   margin: 0;
 }
 
-#education ul li:last-child,
-#jobs ul li:last-child {
+.timeline:last-child {
   background: none;
 }
 
-#education ul li .content,
-#jobs ul li .content {
+.timeline .content {
   position: relative;
   bottom: 0;
-  width: 25rem;
+  width: 30rem;
   padding: 0.7rem 2rem 1rem 3rem;
-  transition: all 0.5s ease-in-out;
 }
 
 ul {
   width: 25rem;
 }
-#education ul li div p,
-#jobs ul li div p {
+
+.timeline div p {
   margin: 0;
-  margin-bottom: 0.5rem;
 }
 
-#education ul li::before,
-#jobs ul li::before {
+.timeline::before {
   content: attr(data-before-content);
   text-align: center;
   line-height: 2.5rem;
@@ -60,22 +39,21 @@ ul {
   border-radius: 50%;
 }
 
-.heading {
-  display: flex;
-}
-
-.heading p {
+p {
   line-height: 1.6rem;
-  padding-left: 1rem;
-}
-.heading p::before {
-  content: "-";
-  padding-right: 1rem;
+  padding-bottom: 0;
 }
 
-.resume-heading {
-  border: 2px solid gray;
-  display: inline;
-  padding: 0.8rem;
-  border-radius: 5px;
+/* new */
+.list-title p::before {
+  content: "-";
+  padding: 0 1rem;
+}
+
+.content-p {
+  padding-bottom: 1rem;
+}
+img {
+  width: 30rem;
+  margin-top: 8rem;
 }
