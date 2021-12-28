@@ -1,0 +1,36 @@
+/* must be in dev syle for h1 with icons*/
+.icon-h2 {
+  margin: 4rem 0 2rem 0;
+}
+
+.icon-h2 h2 {
+  padding: 0 1rem;
+  display: inline;
+}
+
+.icon-h2 fa-icon {
+  color: var(--light-color);
+  font-size: 1.5rem;
+}
+
+.tx-light {
+  color: var(--light-color);
+}
+
+.tx-center {
+  text-align: center;
+}
+
+.chevron-primary fa-icon {
+  color: var(--primary-color);
+}
+
+.chevron-primary div {
+  padding: 0.05rem 0 1rem 1rem;
+}
+
+.page-heading {
+  display: inline;
+  padding-bottom: 1rem;
+  border-bottom: 0.3rem solid var(--primary-color);
+}

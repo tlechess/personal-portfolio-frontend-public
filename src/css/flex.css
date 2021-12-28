@@ -1,0 +1,36 @@
+/* Creates a flex row */
+.fx-row {
+  display: flex;
+}
+
+/* Creates a flex column */
+.fx-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* space around for row */
+.fx-sa-row {
+  justify-content: space-around;
+}
+
+/* space between for row */
+.fx-sb-row {
+  justify-content: space-between;
+}
+
+/* center on x for row */
+.fx-cx-row {
+  justify-content: center;
+}
+
+/* center on y for row */
+.fx-cy-row {
+  align-items: center;
+}
+
+/* center on x and y for row and col */
+.fx-center {
+  justify-content: center;
+  align-items: center;
+}

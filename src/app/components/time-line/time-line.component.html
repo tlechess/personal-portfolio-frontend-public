@@ -1,32 +1,45 @@
-<div class="flex-container">
+<div class="fx-row fx-sb-row">
     <section id="jobs">
-        <h1 class="text-light resume-heading">Work Experiences</h1>
+        <div class="icon-h2">
+            <fa-icon [icon]="faBriefcase"></fa-icon>
+            <h2 class="tx-light">Work Experiences</h2>
+        </div>
         <ul>
-            <li *ngFor="let jobs of jobs" [attr.data-before-content]="[setJobsIndex()]">
+            <li *ngFor="let job of jobs" [attr.data-before-content]="[setJobsIndex()]" class="timeline">
                 <div class="content">
-                    <p class="text-primary text-small">{{jobs.date}}</p>
-                    <div class="heading">
-                        <h3 class="text-light">{{jobs.heading}}</h3>
-                        <p class="text-primary">{{jobs.location}}</p>
+                    <div class="fx-row list-title">
+                        <h3 class="tx-light">{{job.jobTitle}}</h3>
+                        <p class="tx-light">{{job.location}}</p>
                     </div>
-                    <p class="text-light">{{jobs.perigraph}}</p>
+                    <p class="tx-light content-p">{{job.date}}</p>
+                    <ul>
+                        <li *ngFor="let discriptionList of job.discriptionList" class="fx-row chevron-primary">
+                            <fa-icon [icon]="faChevronRight"></fa-icon>
+                            <div class="tx-light">{{discriptionList}}</div>
+                        </li>
+                    </ul>
                 </div>
             </li>
         </ul>
     </section>
     <section id="education">
-        <h1 class="text-light resume-heading">Education</h1>
+        <div class="icon-h2">
+            <fa-icon [icon]="faUserGraduate"></fa-icon>
+            <h2 class="tx-light ">Education</h2>
+        </div>
         <ul>
-            <li *ngFor="let education of educations;" [attr.data-before-content]="[setEducationIndex()]">
+            <li *ngFor="let education of educations;" [attr.data-before-content]="[setEducationIndex()]"
+                class="timeline">
                 <div class="content">
-                    <p class="text-primary text-small">{{education.date}}</p>
-                    <div class="heading">
-                        <h3 class="text-light">{{education.heading}}</h3>
-                        <p class="text-primary">{{education.location}}</p>
+                    <div class="list-title fx-row">
+                        <h3 class="tx-light">{{education.schoolName}}</h3>
+                        <p class="tx-light">{{education.location}}</p>
                     </div>
-                    <p class="text-light">{{education.perigraph}}</p>
+                    <p class="text-light content-p">{{education.dateAttended}}</p>
+                    <p class="text-light">{{education.details}}</p>
                 </div>
             </li>
         </ul>
+        <img src="../../../assets/img/laptop picture.jpg" alt="">
     </section>
 </div>

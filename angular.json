@@ -30,8 +30,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "src/theme.scss"
+              "src/css/styles.css",
+              "src/theme.scss",
+              "src/css/flex.css",
+              "src/css/font.css"
             ],
             "scripts": []
           },

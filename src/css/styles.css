@@ -52,7 +52,6 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 0.55rem;
   line-height: 1.3;
 }
 
@@ -211,4 +210,9 @@ h6 {
 
 .btn:hover {
   opacity: 0.9;
+}
+
+/* New Flex */
+.current {
+  border-bottom: 0.1rem solid var(--primary-color);
 }

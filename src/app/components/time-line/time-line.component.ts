@@ -1,6 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { TimeLine } from 'src/app/models/time-line';
-import { CreateTimelineService } from 'src/app/services/create-timelin/create-timeline.service';
+import { WorkExperiences } from 'src/app/models/work-experiences';
+import { ResumeService } from 'src/app/services/create-timelin/resume.service';
+import { faUserGraduate } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
+import { Education } from 'src/app/models/education';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-time-line',
@@ -8,16 +13,19 @@ import { CreateTimelineService } from 'src/app/services/create-timelin/create-ti
   styleUrls: ['./time-line.component.css']
 })
 export class TimeLineComponent implements OnInit {
-  educations: TimeLine[] = [];
-  jobs: TimeLine[] = [];
+  educations: Education[] = [];
+  jobs: WorkExperiences[] = [];
   educationIndex: number = 0;
   jobsIndex: number = 0;
+  faUserGraduate = faUserGraduate;
+  faBriefcase = faBriefcase;
+  faChevronRight = faChevronRight
 
-  constructor(private createTimeService: CreateTimelineService) { }
+  constructor(private createTimeService: ResumeService) { }
 
   ngOnInit(): void {
     this.educations = this.createTimeService.setEducation();
-    this.jobs = this.createTimeService.setJob();
+    this.jobs = this.createTimeService.setWorkExperiences();
   }
 
   setEducationIndex(): number {
