@@ -1,0 +1,33 @@
+#about-img img {
+  height: 19rem;
+  width: 19rem;
+  border-radius: 50%;
+}
+
+#about-flex-container {
+  margin-top: 5rem;
+}
+
+#about-content {
+  padding-left: 2rem;
+}
+
+#about-content h2,
+#about-content h3,
+#about-content p {
+  padding-bottom: 1rem;
+}
+
+#about-list li {
+  padding-bottom: 1rem;
+}
+
+#about-list li span {
+  font-weight: bold;
+  padding-right: 0.5rem;
+}
+
+#about-list li fa-icon {
+  color: var(--primary-color);
+  padding-right: 0.5rem;
+}

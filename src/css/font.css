@@ -21,6 +21,10 @@
   text-align: center;
 }
 
+.tx-left {
+  text-align: left;
+}
+
 .chevron-primary fa-icon {
   color: var(--primary-color);
 }
@@ -30,7 +34,8 @@
 }
 
 .page-heading {
-  display: inline;
+  display: inline-block;
   padding-bottom: 1rem;
   border-bottom: 0.3rem solid var(--primary-color);
+  margin-top: 3rem;
 }
