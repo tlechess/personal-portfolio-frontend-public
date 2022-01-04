@@ -1,4 +1,5 @@
 export class Skill {
-    skillName: string = "";
-    skillPercentage: string = "";
+    id: number;
+    skillName: string;
+    skillPercentage: string;
 }

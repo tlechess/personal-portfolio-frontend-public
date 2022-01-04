@@ -1,0 +1,41 @@
+<section id="project-details">
+    <div>
+        <div id="details-heading" class="tx-center ">
+            <h1 class="page-heading tx-light">{{project.projectName}}</h1>
+        </div>
+        <div class="fx-row fx-cx-row">
+            <div id="details-img">
+                <img attr.src={{project.projectUrls.imgUrl}} alt="">
+            </div>
+            <div id="details-content" class="tx-light">
+                <h2>Project Information</h2>
+                <ul>
+                    <li>
+
+                        <fa-icon [icon]="faChevronRight"></fa-icon>
+                        <span>Client:</span> {{project.cliant}}
+                    </li>
+                    <li>
+                        <fa-icon [icon]="faChevronRight"></fa-icon>
+                        <span>Project URL:</span> {{project.projectUrls.domainUrl}}
+                    </li>
+                    <li>
+                        <fa-icon [icon]="faChevronRight"></fa-icon>
+                        <span>Project Date:</span> {{project.projectDate}}
+                    </li>
+                    <li>
+                        <fa-icon [icon]="faChevronRight"></fa-icon>
+                        <span>Source Code:</span>
+                        <a [href]="project.projectUrls.frontendUrl" class="tx-light">
+                            {{project.projectUrls.frontendUrl}}
+                        </a>
+
+                    </li>
+                </ul>
+                <h2>Project Details</h2>
+                <p>{{project.details}}</p>
+            </div>
+        </div>
+
+    </div>
+</section>

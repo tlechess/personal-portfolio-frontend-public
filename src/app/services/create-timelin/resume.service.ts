@@ -73,9 +73,7 @@ export class ResumeService {
     let job: WorkExperience = new WorkExperience;
     job.jobTitle = heading;
     job.location = location;
-    job.date = date;
-    job.discriptionList = discriptionList;
-
+  
     return job;
   }
   

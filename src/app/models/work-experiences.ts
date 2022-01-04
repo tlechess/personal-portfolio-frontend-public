@@ -1,7 +1,10 @@
+import { JobDiscription } from "./job-discription";
+
 export class WorkExperiences {
-    jobTitle: string = "";
-    location: string = "";
-    date: string = "";
-    discriptionList: string[] = [];
+    id: string; 
+    jobTitle: string;
+    location: string;
+    timePeriod: string;
+    jobDiscription: JobDiscription[];
 }
 

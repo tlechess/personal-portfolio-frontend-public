@@ -24,6 +24,9 @@ import { TimeLineComponent } from './components/time-line/time-line.component';
 import { WorkExperianceComponent } from './components/work-experiance/work-experiance.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { TestComponent } from './components/test/test.component';
+import { ProjectComponent } from './components/project/project.component';
+import { ProjectPageComponent } from './components/project-page/project-page.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 
@@ -40,7 +43,9 @@ import { TestComponent } from './components/test/test.component';
     TimeLineComponent,
     WorkExperianceComponent,
     ProgressBarComponent,
-    TestComponent
+    TestComponent,
+    ProjectComponent,
+    ProjectPageComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +57,8 @@ import { TestComponent } from './components/test/test.component';
     RouterModule,
     MatSidenavModule,
     MatIconModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
   exports: [
     RouterModule

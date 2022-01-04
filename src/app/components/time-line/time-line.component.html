@@ -5,17 +5,17 @@
             <h2 class="tx-light">Work Experiences</h2>
         </div>
         <ul>
-            <li *ngFor="let job of jobs" [attr.data-before-content]="[setJobsIndex()]" class="timeline">
+            <li *ngFor="let job of jobs; let i = index" [attr.data-before-content]="i + 1" class="timeline">
                 <div class="content">
                     <div class="fx-row list-title">
                         <h3 class="tx-light">{{job.jobTitle}}</h3>
                         <p class="tx-light">{{job.location}}</p>
                     </div>
-                    <p class="tx-light content-p">{{job.date}}</p>
+                    <p class="tx-light content-p">{{job.timePeriod}}</p>
                     <ul>
-                        <li *ngFor="let discriptionList of job.discriptionList" class="fx-row chevron-primary">
+                        <li *ngFor="let discriptionList of job.jobDiscription" class="fx-row chevron-primary">
                             <fa-icon [icon]="faChevronRight"></fa-icon>
-                            <div class="tx-light">{{discriptionList}}</div>
+                            <div class="tx-light">{{discriptionList.discription}}</div>
                         </li>
                     </ul>
                 </div>
@@ -28,8 +28,7 @@
             <h2 class="tx-light ">Education</h2>
         </div>
         <ul>
-            <li *ngFor="let education of educations;" [attr.data-before-content]="[setEducationIndex()]"
-                class="timeline">
+            <li *ngFor="let education of educations; let i = index" [attr.data-before-content]="i + 1" class="timeline">
                 <div class="content">
                     <div class="list-title fx-row">
                         <h3 class="tx-light">{{education.schoolName}}</h3>
