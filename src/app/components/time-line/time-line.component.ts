@@ -5,6 +5,8 @@ import { faUserGraduate } from '@fortawesome/free-solid-svg-icons';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { Education } from 'src/app/models/education';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { EducationService } from 'src/app/services/education/education.service';
+import { WorkExperiencesService } from 'src/app/services/work-experiences/work-experiences.service';
 
 
 @Component({
@@ -15,27 +17,26 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 export class TimeLineComponent implements OnInit {
   educations: Education[] = [];
   jobs: WorkExperiences[] = [];
-  educationIndex: number = 0;
-  jobsIndex: number = 0;
   faUserGraduate = faUserGraduate;
   faBriefcase = faBriefcase;
   faChevronRight = faChevronRight
 
-  constructor(private createTimeService: ResumeService) { }
+  constructor(
+    private createTimeService: ResumeService,
+    private educationService: EducationService,
+    private workExperienceService: WorkExperiencesService
+  ) {}
 
   ngOnInit(): void {
-    this.educations = this.createTimeService.setEducation();
-    this.jobs = this.createTimeService.setWorkExperiences();
+    this.getEducations();
+    this.getWorkExperiences();
   }
 
-  setEducationIndex(): number {
-    this.educationIndex = this.educationIndex + 1
-    return this.educationIndex;
+  getEducations():void {
+    this.educationService.getEducations().subscribe(data => this.educations = data);
   }
 
-  setJobsIndex(): number {
-    this.jobsIndex = this.jobsIndex + 1
-    return this.jobsIndex;
+  getWorkExperiences(): void {
+    this.workExperienceService.getWorkExperiences().subscribe(data => this.jobs = data);
   }
-
 }

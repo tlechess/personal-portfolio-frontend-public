@@ -1,0 +1,35 @@
+li span {
+  font-weight: bold;
+  padding-right: 0.5rem;
+}
+
+li fa-icon {
+  color: var(--primary-color);
+  padding-right: 0.5rem;
+}
+
+li {
+  padding-bottom: 0.75rem;
+}
+
+h2 {
+  padding-bottom: 0.75rem;
+}
+
+#details-content {
+  width: 30rem;
+  margin-left: 5rem;
+}
+
+#details-img {
+  width: 35rem;
+  height: 100%;
+}
+
+img {
+  height: 22rem;
+}
+
+#details-heading {
+  margin-bottom: 3rem;
+}

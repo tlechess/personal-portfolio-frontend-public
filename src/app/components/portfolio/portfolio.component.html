@@ -1,1 +1,12 @@
-<p>portfolio works!</p>
+<section id="portfolio-a" class="tx-center">
+    <div class="container">
+        <h1 class="text-light page-heading">Portfolio</h1>
+        <h2 class="text-light">Check out some of my projects</h2>
+        <div class="items">
+            <div class="item" *ngFor="let project of projects; let i = index">
+                <app-project class="text-light" [project]="project" [index]="i"></app-project>
+            </div>
+
+        </div>
+    </div>
+</section>

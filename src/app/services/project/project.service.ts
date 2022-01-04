@@ -1,20 +1,20 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Skill } from 'src/app/models/skill';
+import { Project } from 'src/app/models/project';
 
 @Injectable({
   providedIn: 'root'
 })
-export class SkillServiceService {
+export class ProjectService {
 
   //data feilds
-  url: string = "http://18.218.218.33:8080/skill"
-
+  url: string = "http://18.218.218.33:8080/project"
   constructor(private http: HttpClient) { }
 
-  getSkills(): Observable<Skill[]> {
-    return this.http.get<Skill[]>(this.url);
+  getProjects(): Observable<Project[]> {
+    return this.http.get<Project[]>(this.url);
   }
 
+  
 }

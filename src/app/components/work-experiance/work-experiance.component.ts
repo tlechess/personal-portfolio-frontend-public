@@ -14,7 +14,7 @@ export class WorkExperianceComponent implements OnInit {
   constructor(private skillService: SkillServiceService) { }
 
   ngOnInit(): void {
-    this.skills = this.skillService.getSkills();
+    this.skillService.getSkills().subscribe(data => {this.skills = data});
   }
 
 }
