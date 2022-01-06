@@ -27,6 +27,8 @@ import { TestComponent } from './components/test/test.component';
 import { ProjectComponent } from './components/project/project.component';
 import { ProjectPageComponent } from './components/project-page/project-page.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { ConfirmationComponent } from './components/confirmation/confirmation.component';
 
 
 
@@ -45,7 +47,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     ProgressBarComponent,
     TestComponent,
     ProjectComponent,
-    ProjectPageComponent
+    ProjectPageComponent,
+    ConfirmationComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +61,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     MatSidenavModule,
     MatIconModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   exports: [
     RouterModule

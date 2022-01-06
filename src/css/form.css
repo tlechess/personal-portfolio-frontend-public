@@ -9,17 +9,18 @@
 .form-input {
   height: 3rem;
   width: 30rem;
-  margin-bottom: 2rem;
   border-radius: 5px;
   border: 0;
   padding-left: 1rem;
   box-shadow: none;
 }
+.form-group {
+  margin-bottom: 2rem;
+}
 
 .form-text-area {
   width: 30rem;
   border-radius: 5px;
-  margin-bottom: 2rem;
   border: 0;
   padding-left: 1rem;
   padding-top: 1rem;
@@ -34,4 +35,28 @@
   border-radius: 5px;
   border: 0;
   box-shadow: none;
+}
+
+.form-btn-primary:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.form-btn-primary-disabled {
+  background: var(--primary-light);
+  color: var(--light-color);
+  height: 3rem;
+  width: 30rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: none;
+}
+
+.invalid-alert {
+  background: var(--danger);
+  color: var(--danger-tx);
+  padding: 1rem 0.5rem;
+  text-align: left;
+  border-radius: 5px;
 }
