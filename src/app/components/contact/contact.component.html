@@ -1,12 +1,50 @@
 <Section id="contact-form">
     <div class="container tx-center">
         <h1 class="page-heading tx-light">Contact</h1>
-        <form action="submit" class="form">
-            <input class="form-input" type="text" placeholder="Your Name">
-            <input class="form-input" type="text" placeholder="Your Email">
-            <input class="form-input" type="text" placeholder="Subject">
-            <textarea class="form-text-area" placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
-            <button class="form-btn-primary">Submit</button>
+        <h3 class="tx-light">Get In Touch</h3>
+        <form class="form" #form="ngForm" (ngSubmit)="submit()">
+            <div class="form-group">
+                <input placeholder="name" class="form-input" type="text" name="name" required [(ngModel)]="email.name"
+                    #name="ngModel">
+
+                <div class="invalid-alert" *ngIf="name.touched && !name.valid">
+                    Name is required
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input placeholder="email" type="text" class="form-input" name="email" required #emailAdress="ngModel"
+                    [(ngModel)]="email.email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+                <div class="invalid-alert" *ngIf="emailAdress.touched && !emailAdress.valid">
+                    <div *ngIf="emailAdress.errors.required">Email is required.</div>
+                    <div *ngIf="emailAdress.errors.pattern">Invalid Email.</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input #contactSubject="ngModel" required [(ngModel)]="email.subject" name="subject" class="form-input"
+                    type="text" placeholder="Subject">
+
+                <div class="invalid-alert" *ngIf="contactSubject.touched && !contactSubject.valid">
+                    Subject is required.
+                </div>
+            </div>
+
+            <div class="form-group">
+                <textarea #message="ngModel" required [(ngModel)]="email.body" name="message" class="form-text-area"
+                    placeholder="Message" id="" cols="30" rows="10"></textarea>
+
+                <div class="invalid-alert" *ngIf="message.touched && !message.valid">
+                    A message is required.
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button [disabled]="!form.valid" [class.form-btn-primary]="form.valid"
+                    [class.form-btn-primary-disabled]="!form.valid" [routerLink]="['confirmation']">Submit</button>
+            </div>
+
         </form>
     </div>
 

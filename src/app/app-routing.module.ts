@@ -1,6 +1,7 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutMeComponent } from './components/about-me/about-me.component';
+import { ConfirmationComponent } from './components/confirmation/confirmation.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'protfolio', component: PortfolioComponent},
   { path: 'resume', component: ResumeComponent},
   { path: 'project/:id', component: ProjectPageComponent},
+  { path: 'contact/confirmation', component: ConfirmationComponent},
   { path: '**', component: PageNotFoundComponent}
 ];
 
