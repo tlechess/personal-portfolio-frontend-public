@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Skill } from 'src/app/models/skill';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,7 @@ import { Skill } from 'src/app/models/skill';
 export class SkillServiceService {
 
   //data feilds
-  url: string = "http://18.218.218.33:8080/skill"
+  url: string = environment.endpointUrl + "skill"
 
   constructor(private http: HttpClient) { }
 

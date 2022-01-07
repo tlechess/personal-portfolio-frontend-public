@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Education } from 'src/app/models/education';
 import { WorkExperiences } from 'src/app/models/work-experiences';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,7 @@ import { WorkExperiences } from 'src/app/models/work-experiences';
 export class WorkExperiencesService {
 
   //data feilds
-  url: string = "http://18.218.218.33:8080/workeperience"
+  url: string = environment.endpointUrl + "workeperience";
   
   //Constructor  
   constructor(private http: HttpClient) { }

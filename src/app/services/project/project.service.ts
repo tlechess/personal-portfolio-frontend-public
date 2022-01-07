@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Project } from 'src/app/models/project';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,7 @@ import { Project } from 'src/app/models/project';
 export class ProjectService {
 
   //data feilds
-  url: string = "http://18.218.218.33:8080/project"
+  url: string = environment.endpointUrl + "project"
   constructor(private http: HttpClient) { }
 
   getProjects(): Observable<Project[]> {
