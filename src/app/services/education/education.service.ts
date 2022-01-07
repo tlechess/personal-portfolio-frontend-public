@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Education } from 'src/app/models/education';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,7 @@ import { Education } from 'src/app/models/education';
 export class EducationService {
 
   //data feilds
-  url: string = "http://18.218.218.33:8080/education"
+  url: string = environment.endpointUrl + "education"
 
   //Constructor
   constructor(private http: HttpClient) {}

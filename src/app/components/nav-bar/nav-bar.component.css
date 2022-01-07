@@ -8,15 +8,16 @@
 }
 
 .list li a fa-icon:hover,
-.list h2 a:hover {
+.list h2 a:hover,
+#nav-links li a:hover {
   color: var(--primary-color) !important;
 }
 
-.list li:hover {
+#nav-links li:hover {
   border-bottom: 0.1rem solid var(--primary-color);
 }
 #nav-links li {
-  margin: 1.5rem;
+  margin: 0 1.5rem 1.5rem 1.5rem;
   padding-bottom: 0.5rem;
 }
 

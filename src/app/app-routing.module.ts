@@ -10,8 +10,8 @@ import { ProjectPageComponent } from './components/project-page/project-page.com
 import { ResumeComponent } from './components/resume/resume.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
   { path: 'home', component: HomeComponent},
-  { path: '', redirectTo: '', pathMatch: 'full'},
   { path: 'about', component: AboutMeComponent},
   { path: 'contact', component: ContactComponent},
   { path: 'protfolio', component: PortfolioComponent},
