@@ -31,7 +31,6 @@
             ],
             "styles": [
               "src/css/styles.css",
-              "src/theme.scss",
               "src/css/flex.css",
               "src/css/font.css",
               "src/css/form.css"
