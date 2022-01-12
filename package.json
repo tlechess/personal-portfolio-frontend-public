@@ -15,6 +15,8 @@
     "@angular/cli": "~13.1.2",
     "@fortawesome/fontawesome-svg-core": "1.2.36",
     "@fortawesome/free-solid-svg-icons": "5.15.4",
+    "@fortawesome/angular-fontawesome": "0.10.1",
+    "@fortawesome/free-brands-svg-icons": "5.15.4",
     "@angular/compiler-cli": "~13.1.0",
     "@angular/animations": "~13.1.0",
     "@angular/material": "13.1.1",
