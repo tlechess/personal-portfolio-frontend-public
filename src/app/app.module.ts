@@ -29,6 +29,7 @@ import { ProjectPageComponent } from './components/project-page/project-page.com
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ConfirmationComponent } from './components/confirmation/confirmation.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 
@@ -67,7 +68,7 @@ import { ConfirmationComponent } from './components/confirmation/confirmation.co
   exports: [
     RouterModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
