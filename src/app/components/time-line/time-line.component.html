@@ -35,8 +35,13 @@
                         <p class="tx-light">{{education.location}}</p>
                     </div>
                     <p class="text-light content-p">{{education.dateAttended}}</p>
-                    <fa-icon [icon]="faChevronRight"></fa-icon>
-                    <p class="text-light">{{education.details}}</p>
+                    <ul>
+                        <li *ngFor="let educationDetailsList of education.educationDetails"
+                            class="fx-row chevron-primary">
+                            <fa-icon [icon]="faChevronRight"></fa-icon>
+                            <div class="tx-light">{{educationDetailsList.details}}</div>
+                        </li>
+                    </ul>
                 </div>
             </li>
         </ul>
