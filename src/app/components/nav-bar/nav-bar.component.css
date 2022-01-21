@@ -24,3 +24,43 @@
 .container div {
   margin-top: 10px;
 }
+
+@media (max-width: 600px) {
+  #social-media {
+    display: none;
+  }
+
+  #name {
+    text-align: center;
+  }
+
+  #nav-links li {
+    margin: 0 0.5rem 0 0.5rem;
+  }
+
+  #nav-bar {
+    flex-direction: column;
+    padding-top: 0rem;
+  }
+
+  #nav-bar div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  #social-media {
+    display: none;
+  }
+
+  #nav-bar {
+    flex-direction: column;
+    padding-top: 0rem;
+  }
+
+  #name {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+}
