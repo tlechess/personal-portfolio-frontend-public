@@ -1,14 +1,23 @@
-<div class="item">
-    <a (click)="goToProject()">
-        <div class="item-image">
-            <img attr.src={{project.projectUrls.imgUrl}} alt="">
-        </div>
-        <div class="item-text">
-            <div class="item-text-wrap">
-                <h3 class="item-text-title text-light">{{project.projectName}}</h3>
-                <p class="text-light">Click to find out more</p>
+<div class="card-container">
+    <div class="card">
+        <a (click)="goToProject()">
+            <div class="item-image">
+                <img attr.src={{project.projectUrls.imgUrl}} alt="">
             </div>
+            <div class="item-text">
+                <div class="item-text-wrap">
+                    <h3 class="item-text-title text-light">{{project.projectName}}</h3>
+                    <p class="text-light">Click to find out more</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="card-content">
+        <p id="card-p-tag">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, recusandae?</p>
+        <div class="button-container">
+            <button class="btn btn-primary">Live Preview</button>
+            <button class="btn btn-primary">Source Code</button>
         </div>
-    </a>
+    </div>
 
 </div>
