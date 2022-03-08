@@ -19,4 +19,12 @@ export class ProjectComponent implements OnInit {
   goToProject():void {
     this.route.navigate(['/project/' + this.index]);
   }
+
+  goToPreview():void {
+    window.location.href = this.project.projectUrls.domainUrl;
+  }
+
+  goToSourceCode(): void {
+    window.location.href = this.project.projectUrls.frontendUrl;
+  }
 }

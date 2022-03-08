@@ -13,10 +13,10 @@
         </a>
     </div>
     <div class="card-content">
-        <p id="card-p-tag">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, recusandae?</p>
+        <p id="card-p-tag">{{project.shortDetails}}</p>
         <div class="button-container">
-            <button class="btn btn-primary">Live Preview</button>
-            <button class="btn btn-primary">Source Code</button>
+            <button (click)="goToPreview()" class="btn btn-primary">Live Preview</button>
+            <button (click)="goToSourceCode()" class="btn btn-primary">Source Code</button>
         </div>
     </div>
 
