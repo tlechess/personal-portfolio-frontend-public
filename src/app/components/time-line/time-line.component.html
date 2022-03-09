@@ -1,4 +1,4 @@
-<div class="fx-row fx-sb-row">
+<div id="timeline" class="fx-row fx-sb-row">
     <section id="jobs">
         <div class="icon-h2">
             <fa-icon [icon]="faBriefcase"></fa-icon>
@@ -15,7 +15,7 @@
                     <ul>
                         <li *ngFor="let discriptionList of job.jobDiscription" class="fx-row chevron-primary">
                             <fa-icon [icon]="faChevronRight"></fa-icon>
-                            <div class="tx-light">{{discriptionList.discription}}</div>
+                            <div class="tx-light discription">{{discriptionList.discription}}</div>
                         </li>
                     </ul>
                 </div>
@@ -39,7 +39,7 @@
                         <li *ngFor="let educationDetailsList of education.educationDetails"
                             class="fx-row chevron-primary">
                             <fa-icon [icon]="faChevronRight"></fa-icon>
-                            <div class="tx-light">{{educationDetailsList.details}}</div>
+                            <div class="tx-light discription">{{educationDetailsList.details}}</div>
                         </li>
                     </ul>
                 </div>

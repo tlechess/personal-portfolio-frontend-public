@@ -13,3 +13,9 @@ fa-icon {
   color: var(--light-color);
   font-size: 1.5rem;
 }
+
+@media (max-width: 900px) {
+  .icon-h2 {
+    text-align: center;
+  }
+}
