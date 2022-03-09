@@ -46,7 +46,5 @@ testem.log
 Thumbs.db
 
 # Personal ignore
-*.json
-*.conf.js 
-*.key
-environments
+.browserslistrc
+.editorconfig
