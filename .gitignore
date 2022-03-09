@@ -55,4 +55,6 @@ server.js
 *.key
 src/environments/
 .vscode
+polyfills.ts
+test.ts
 
