@@ -50,9 +50,9 @@ Thumbs.db
 .editorconfig
 *.json
 *.conf.js 
-.csr
+*.csr
 server.js
-.key
+*.key
 src/environments/
 .vscode
 
