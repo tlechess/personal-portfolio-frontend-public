@@ -44,3 +44,17 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Personal ignore
+.browserslistrc
+.editorconfig
+*.json
+*.conf.js 
+*.csr
+server.js
+*.key
+src/environments/
+.vscode
+polyfills.ts
+test.ts
+

@@ -16,20 +16,43 @@ h2 {
   padding-bottom: 0.75rem;
 }
 
+p {
+  padding-bottom: 2rem;
+}
+
 #details-content {
-  width: 30rem;
+  width: 50vw;
   margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 #details-img {
-  width: 35rem;
-  height: 100%;
+  width: 50vw;
 }
 
 img {
-  height: 22rem;
+  height: 40rem;
 }
 
 #details-heading {
   margin-bottom: 3rem;
+}
+
+#project-content {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+}
+
+#button {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin-top: 2rem;
+  height: 3rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
 }

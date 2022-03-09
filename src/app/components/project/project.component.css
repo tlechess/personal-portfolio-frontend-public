@@ -1,11 +1,36 @@
-.item {
+.card-container {
+  background: #000000;
+  height: 30rem;
+  border-radius: 10px;
+  width: 28rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50%;
+  margin: 0 2rem;
+}
+
+#card-p-tag {
+  text-align: left;
+  width: 18rem;
+}
+
+.card {
   position: relative;
   background: var(--primary-color);
   overflow: hidden;
   cursor: pointer;
 }
 
-.item::after {
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card::after {
   content: "";
   position: absolute;
   display: block;
@@ -19,24 +44,26 @@
   transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
 }
 
-.item:hover:after {
+.card:hover:after {
   transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
 }
 
-.item:hover .item-image {
+.card:hover .item-image {
   transform: scale(1.2);
 }
 
-.item:hover .item-text {
+.card:hover .item-text {
   opacity: 1;
   transform: translateY(0);
 }
 
 .item-image {
-  height: 10rem;
+  height: 16rem;
   transform: translateZ(0);
   display: block;
   transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .item-image::before {
@@ -80,9 +107,24 @@
 .item-text-title {
   font-size: 2rem;
   padding: 0 1rem;
-  margin-top: 5px;
+  margin-top: 4rem;
 }
 
 p {
   margin-top: 1rem;
+}
+
+button {
+  border-radius: 5px;
+  width: 11rem;
+  height: 3rem;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+h3 {
+  padding-top: 1rem;
 }

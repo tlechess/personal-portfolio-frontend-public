@@ -3,37 +3,26 @@
         <div id="details-heading" class="tx-center ">
             <h1 class="page-heading tx-light">{{project.projectName}}</h1>
         </div>
-        <div class="fx-row fx-cx-row">
+        <div id="project-content">
             <div id="details-img">
                 <img attr.src={{project.projectUrls.imgUrl}} alt="">
             </div>
             <div id="details-content" class="tx-light">
-                <h2>Project Information</h2>
-                <ul>
-                    <li>
-
-                        <fa-icon [icon]="faChevronRight"></fa-icon>
-                        <span>Client:</span> {{project.cliant}}
-                    </li>
-                    <li>
-                        <fa-icon [icon]="faChevronRight"></fa-icon>
-                        <span>Project URL:</span> {{project.projectUrls.domainUrl}}
-                    </li>
-                    <li>
-                        <fa-icon [icon]="faChevronRight"></fa-icon>
-                        <span>Project Date:</span> {{project.projectDate}}
-                    </li>
-                    <li>
-                        <fa-icon [icon]="faChevronRight"></fa-icon>
-                        <span>Source Code:</span>
-                        <a [href]="project.projectUrls.frontendUrl" class="tx-light">
-                            {{project.projectUrls.frontendUrl}}
-                        </a>
-
-                    </li>
-                </ul>
                 <h2>Project Details</h2>
                 <p>{{project.details}}</p>
+                <h2>Technology</h2>
+                <ul>
+                    <li *ngFor="let technology of project.technologies;">
+                        <fa-icon [icon]="faChevronRight"></fa-icon>
+                        {{technology.technology}}
+                    </li>
+                </ul>
+                <div id="button">
+                    <button (click)="goToPreview()" class="btn btn-primary">Live Preview</button>
+                    <button (click)="goToFrontEndSourceCode()" class="btn btn-primary">Frontend Source Code</button>
+                    <button (click)="goToBackEndSourceCode()" class="btn btn-primary">Backend Source Code</button>
+                </div>
+
             </div>
         </div>
 

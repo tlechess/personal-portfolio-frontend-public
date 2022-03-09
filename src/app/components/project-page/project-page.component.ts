@@ -25,6 +25,15 @@ export class ProjectPageComponent implements OnInit {
     })
   }
 
-  
+  goToPreview():void {
+    window.location.href = this.project.projectUrls.domainUrl;
+  }
 
+  goToFrontEndSourceCode(): void {
+    window.location.href = this.project.projectUrls.frontendUrl;
+  }
+
+  goToBackEndSourceCode(): void {
+    window.location.href = this.project.projectUrls.backendUrl
+  }
 }

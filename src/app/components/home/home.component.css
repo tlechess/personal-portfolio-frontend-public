@@ -50,9 +50,10 @@
 
 button {
   z-index: 5;
-  width: 10rem;
+  width: 11rem;
   height: 3rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
+
   border-radius: 5px;
 }
 
@@ -61,5 +62,5 @@ button:hover {
 }
 
 h3 {
-  margin-top: 0.5rem;
+  padding-top: 2rem;
 }

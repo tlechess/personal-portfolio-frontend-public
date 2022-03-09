@@ -3,4 +3,5 @@ export class ProjectUrls {
     imgUrl: string = "";
     domainUrl: string = "";
     frontendUrl: string = "";   
+    backendUrl: string = "";
 }
